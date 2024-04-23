@@ -1,0 +1,76 @@
+input[type=submit] {
+  width: 48%;
+  background-color: #4CAF50;
+  color: white;
+  float: right;
+  border-radius: 4px;
+  padding: 12px 20px;
+  margin-top: 20px;
+  margin-left:8%;
+  margin-right: 20px;
+  margin-bottom: 2%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: red;
+}
+
+input[type=text], select {
+  margin-top: -100px;
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.home{
+  background-color: #FFCC00 ;
+}
+
+.r1{
+background-color: rebeccapurple;
+overflow: hidden;
+}
+img{  
+clip-path: circle(65px);
+height: 130px;
+margin-left: -25px;
+}
+#h1{
+padding-top: 1%;
+color: white;
+font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+font-size: 18px;
+overflow: hidden;
+}
+
+.r2{
+font-size: 20px;
+margin-top: 20px;
+overflow: hidden;
+}
+#m1{
+float: left;
+width: 40%;
+}
+
+.format{
+background-color: cornsilk;
+font-family: URW Chancery L, cursive;
+width: 40%;
+float: right;
+margin-top: 20px;
+margin-right: 3.5%;
+font-size: 15px;
+padding: 12px 20px ;
+border: 1px solid #ccc;
+border-radius: 20px;
+}
+
+#spn{
+padding-left: 70px;
+margin-top: -35px;
+}

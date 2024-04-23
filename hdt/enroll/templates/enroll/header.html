@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home page</title>
+    <link  href="{% static 'enroll/header.css' %}" rel="stylesheet">
+    <link  href="{% static 'enroll/homestyle.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <div class="h1">
+        <marquee behavior="alternate" direction="" scrollamount="15">
+          
+          <h1>Heart Disease Prediction</h1> </marquee>
+        </div>
+
+        <div id="list">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li style="float:right"><a href="{% url 'logout' %}">Logout</a></li>
+          </ul>
+        </div>

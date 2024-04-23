@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Login</title>
+    <link  href='{% static "enroll/login.css" %}' rel="stylesheet">
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div>
+            <h1 id="heading">Login</h1>
+            <div class="error">
+                {% if form.non_field_errors %}
+                {% for error in form.non_field_errors %}
+                <p class="error">{{error}}</p>
+                {% endfor %}
+                {% endif %}
+            </div>
+        <div class="k1">
+            {% for field in form %}
+            <p class="new">{{field.label_tag}}</p>
+            <div id="ad">{{field}}</div>
+            {% endfor %}
+            <input type="submit" value="Login">
+            <div class="mq"><a href="{% url 'signup' %}">Signup</a></div>
+            
+          </div>
+          <div class="message">
+            {% if messages %}
+              {% for message in messages %}
+              <small {% if message.tags %} class="{{message.tags}}" {% endif %}>{{message}}</small>
+              {% endfor %}
+              {% endif %}
+        </div>
+    </form>
+</body>
+</html>

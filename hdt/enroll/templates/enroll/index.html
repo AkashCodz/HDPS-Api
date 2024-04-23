@@ -1,0 +1,74 @@
+{% include 'enroll\header.html' %}
+{% load static %}
+<section class="home">
+      <form method="POST" action="{% url 'result' %}">
+        {% csrf_token %}
+        
+        <div class="r1">
+          <div class="img">
+    <img  id='img' src='{% static "enroll\Heart image.jpg" %}'  align="left">
+          </div>
+          <div id="h1">
+            Heart disease describes a range of conditions that affect the heart. Heart diseases include: Blood vessel disease, such as coronary artery disease. Irregular heartbeats (arrhythmias) Heart problems you're born with (congenital heart defects).
+            Heart disease is a general term that includes many types of heart problems. It's also called cardiovascular disease, which means heart and blood vessel disease.
+            Heart disease is the leading cause of death in the United States, but there are ways to prevent and manage many types of heart disease.
+            Your symptoms will depend on the type of heart disease you have. You may not have symptoms at first. In some cases, you may not know you have heart disease until you have a complication such as a heart attack.
+          </div>
+        </div>
+  
+       <div class="r2">
+        
+  <div id="m1">
+  <ul class="c">
+    <li> age: The person’s age in years</li>
+    <li> sex: The person’s sex (1 = male, 0 = female)</li>
+    <li> cp: chest pain type</li>
+      -Value 0: asymptomatic
+      <br>
+        -Value 1: atypical angina 
+        <br>
+         -Value 2: non-anginal pain 
+         <br>
+         -Value 3: typical angina
+    <li>trestbps: The person’s resting blood pressure (mm Hg on admission to the hospital)</li>
+    <li> chol: The person’s cholesterol measurement in mg/dl</li>
+    <li>fbs: The person’s fasting blood sugar (> 120 mg/dl, 1 = true; 0 = false)</li>
+  
+    <li>restecg: resting electrocardiographic results</li>
+    -Value 0: showing probable or definite left ventricular hypertrophy by Estes’ criteria
+      <br>
+      -Value 1: normal
+      ,<br>
+      -Value 2: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
+  
+  <li>  thalach: The person’s maximum heart rate achieved</li>
+  <li>exang: Exercise induced angina (1 = yes; 0 = no)</li>
+  <li>oldpeak: ST depression induced by exercise relative to rest (‘ST’ relates to positions on the ECG plot. See more here)</li>
+     
+    
+    <li> slope: the slope of the peak exercise ST segment</li>
+    0: downsloping; 1: flat; 2: upsloping
+    <li>ca: The number of major vessels (0–3)</li>
+    <li>thal: A blood disorder called thalassemia</li>
+    -Value 0: NULL (dropped from the dataset previously <br>
+    -Value 1: fixed defect (no blood flow in some part of the heart)
+    <br>
+    -Value 2: normal blood flow
+    <br>
+    -Value 3: reversible defect (a blood flow is observed but it is not normal)
+  </ul>
+  </div>
+  
+  <div class="format">
+    {% for field in form %}
+    <p class="new">{{field.label_tag}}</p>
+    <div id="spn">{{field}}</div>
+    {% endfor %}
+  </div>
+  <input type="submit" value="Submit">
+  
+  </div> 
+      </form>
+    </section>
+    </body>
+  </html>

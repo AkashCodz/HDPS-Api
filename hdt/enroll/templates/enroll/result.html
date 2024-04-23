@@ -1,0 +1,23 @@
+{% include 'enroll/header.html' %}
+{% load static %}
+  <head>
+    <title>Result</title>
+    <link  href='{% static "enroll/resultstyle.css" %}' rel="stylesheet">
+  </head>
+  <body>
+    <div class="full">
+  <div id="pre"> <h1>Prediction</h1> </div>
+ 
+  <div id="result">
+{% if result == 0 %}
+  <p id="p1">The Person does not have a Heart Disease</p>
+{% endif %}
+
+{% if result == 1 %}
+  <p id="p2">The Person has Heart Disease</p>
+{% endif %}
+</div>
+
+    </div>
+  </body>
+</html>

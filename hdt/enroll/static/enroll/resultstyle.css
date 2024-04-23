@@ -1,0 +1,67 @@
+#pre {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue', sans-serif;
+   font-size: 40px;
+  font-weight: bold;
+   letter-spacing: -1px;
+   line-height: 1;
+   text-align: center;
+   border-color: black;
+}
+#result{
+  background-color: #FFCC00 ;
+  padding: 10px;
+  
+  
+}
+#p1{
+color: #685206;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-size: 35px;
+  animation: blinker 5s linear infinite;
+  padding: 20px;
+
+}
+@keyframes blinker{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 0;
+    transform: scale(2);  
+  }
+  51%{
+    opacity: 0;
+    transform: scale(0);  
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);  
+  }
+}
+#p2 {
+  color: #685206;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+  font-size: 100px;
+  animation: blink 5s linear infinite;
+  border-radius: 5px;
+  padding: 20px;
+
+}
+
+@keyframes blink{
+  0%{
+    opacity: 1;
+  }
+  51%{
+    opacity: 0;
+    transform: scale(0);  
+  }
+  100%{
+    opacity: 1;
+    transform: scale(0);  
+  }
+}
