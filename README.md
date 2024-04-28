@@ -17,18 +17,42 @@ Now using the DjangoRestFramework making RestApi of Data Inputs.
 
 ## Run Locally
 
-Download the Django library
+Make Virtual Enviroment
+
+```bash
+  py -m venv venv
+```
+>> Run activate.bat
+
+Go to the project directory
+
+```bash
+  cd hdt
+```
+
+Install Django
 
 ```bash
   pip install django
 ```
 
-Go to the project directory
+Django RestFramework
 
 ```bash
-  cd my-project
+  pip install djangorestframework
 ```
 
+Requests
+
+```bash
+  pip install requests
+```
+
+Migrations
+
+```bash
+  py manage.py makemigrations api
+```
 Create Model into Table
 
 ```bash
@@ -40,7 +64,7 @@ Start the server
 ```bash
   py manage.py runserver
 ```
-
+## Then make user profile
 
 ## Screenshots
 
@@ -65,8 +89,6 @@ I'm a full stack developer and Machine learning Engineer.
 
 ## 🔗 Links
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/akash--sharma/)
-
-
 
 ## 🛠 Skills
 Html, CSS, Python, Django, Javascript.
